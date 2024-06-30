@@ -1,0 +1,21 @@
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-flow: column;
+}
+
+.dadosPessoais{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-flow: column;
+}
+
+form{
+  text-align: right;
+}
+
+input{
+  margin: 10px;
+}

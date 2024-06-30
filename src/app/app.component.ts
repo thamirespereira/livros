@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { LivroComponent } from "./components/livro/livro.component";
+import { FormularioComponent } from "./components/formulario/formulario.component";
 
 
 @Component({
@@ -8,7 +9,7 @@ import { LivroComponent } from "./components/livro/livro.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [RouterOutlet, LivroComponent]
+    imports: [RouterOutlet, LivroComponent, FormularioComponent, RouterLink]
 })
 export class AppComponent {
   title = 'my-app';

@@ -1,0 +1,38 @@
+<div class="formulario">
+  <form [formGroup]="formularioPerfil" (ngSubmit)="enviarFormulario()">
+    <div>
+      <label for="inputNomeCompleto">
+        Nome completo:
+        <input id="inputNomeCompleto" type="text" formControlName="nomeCompleto"/>
+      </label>
+    </div>
+    <div>
+      <label for="inputTelefone">
+        Telefone:
+        <input id="inputTelefone" type="text" formControlName="telefone"/>
+      </label>
+    </div>
+    <div>
+      <label for="inputEmail">
+        Email:
+        <input id="inputEmail" type="email" formControlName="email"/>
+      </label>
+    </div>
+    <div>
+      <label for="inputDataDeNascimento">
+        Data de Nascimento:
+        <input id="inputDataDeNascimento" type="text" formControlName="dataDeNascimento"/>
+      </label>
+    </div>
+
+    <button type="submit" [disabled]="!formularioPerfil.valid">Enviar</button>
+  </form>
+</div>
+
+<div class="dadosPessoais">
+  <h2>Dados Pessoais</h2>
+  <p>Nome completo: {{formularioPerfil.value.nomeCompleto}}</p>
+  <p>Telefone: {{formularioPerfil.value.telefone}}</p>
+  <p>Email: {{formularioPerfil.value.email}}</p>
+  <p>Data de nascimento: {{formularioPerfil.value.dataDeNascimento}}</p>
+</div>
