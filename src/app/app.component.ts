@@ -1,16 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { LivroComponent } from "./components/livro/livro.component";
-import { FormularioComponent } from "./components/formulario/formulario.component";
+import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconButton } from '@angular/material/button';
 
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
-    imports: [RouterOutlet, LivroComponent, FormularioComponent, RouterLink]
+    styleUrl: './app.component.css',
+    imports: [
+      RouterOutlet,
+      RouterLink,
+      MatToolbarModule,
+      MatIconModule,
+      MatMenuModule,
+      MatIconButton,
+      MatToolbar
+    ]
 })
 export class AppComponent {
-  title = 'my-app';
+  title =  'my-app';
 }

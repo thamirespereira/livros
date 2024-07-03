@@ -1,12 +1,13 @@
 import { CapituloComponent } from './../capitulo/capitulo.component';
 import { Component, Input } from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
     selector: 'app-livro',
     standalone: true,
     templateUrl: './livro.component.html',
     styleUrl: './livro.component.css',
-    imports: [CapituloComponent]
+    imports: [CapituloComponent, MatCardModule]
 })
 export class LivroComponent {
   @Input() CapituloComponent = '';

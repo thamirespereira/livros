@@ -1,10 +1,12 @@
-
 @for(livro of livros; track livro.id){
+  <mat-card appearance="outlined">
+  <mat-card-content>
   <div class="container">
       <h1>{{livro.titulo}}</h1>
       <h3>{{livro.autor}}</h3>
       <app-capitulo></app-capitulo>
     </div>
-
+  </mat-card-content>
+</mat-card>
   }
 

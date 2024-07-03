@@ -1,5 +1,5 @@
 
-.container{
+/*.container{
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -10,10 +10,12 @@
   border-radius: 20px;
   width: 90%;
   justify-content: center;
-}
+}*/
 
-h1{
-  color: #081c15;
+mat-card{
+  margin: 50px;
+  background-color: #FFC0B7;
+  padding: 10px;
 }
 
 
